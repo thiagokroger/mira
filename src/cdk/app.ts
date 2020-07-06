@@ -60,6 +60,7 @@ export class MiraApp {
     return stacks
   }
 
+
   /**
    * Gets the stack file from CLI.
    */
@@ -69,7 +70,6 @@ export class MiraApp {
     }
     return args.file.split(',')
   }
-
   /**
    * Gets the stack name from CLI.
    */
