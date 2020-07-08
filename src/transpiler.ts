@@ -24,7 +24,7 @@ class Transpiler {
     return new Promise((resolve, reject) => {
       exec(command, {
         cwd: process.cwd()
-      }, (err: Error|null, stdout: string, stderr: string) => {
+      }, (err: Error|null) => {
         if (err) {
           return reject(err)
         }

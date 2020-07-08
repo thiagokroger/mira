@@ -219,7 +219,7 @@ export class MiraBootstrap {
     const appPath = path.resolve(__dirname, filename)
     let appArg = `${q}node "${appPath}" `
     // Still inside the quotes, explode the args.
-    //appArg += this.getArgs().join(' ')
+    // appArg += this.getArgs().join(' ')
     appArg += ` --file=${this.stackFile}`
     appArg += resultedEnv ? ` --env=${resultedEnv}` : ''
     appArg += isCi ? ` --file=${MiraConfig.getPermissionsFilePath()}` : ''

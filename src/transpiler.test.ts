@@ -3,7 +3,7 @@ import path from 'path'
 
 test('should throw if no tsconfig file is found', () => {
   const t = new Transpiler('sampleFile.ts')
-  t.findTSConfigFile = jest.fn(async (start) => { return null })
+  t.findTSConfigFile = jest.fn(async () => { return null })
   expect(t.run.bind(t)).rejects.toThrow('Cannot find tsconfig.json file in project path.')
   jest.restoreAllMocks()
 })
